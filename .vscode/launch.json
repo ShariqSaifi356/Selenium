@@ -1,0 +1,196 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Calendar_2",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Exercise.Calendar_2",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "Calendar_1",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Exercise.Calendar_1",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "Autosuggestive_DropDown_3",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Autosuggestive_DropDown_3",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "HandOn_2",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Exercise.HandOn_2",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "captcha",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Exercise.captcha",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "HandOn_1",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Exercise.HandOn_1",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "A_F_W",
+            "request": "launch",
+            "mainClass": "selenium.wings1.TutorialsPoint.A_F_W",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "Elements",
+            "request": "launch",
+            "mainClass": "selenium.wings1.TutorialsPoint.Elements",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "Exercise_2",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Exercise.Exercise_2",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "e2e",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Exercise.e2e",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "Ecercise_1",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Exercise.Ecercise_1",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "CheckBoxes",
+            "request": "launch",
+            "mainClass": "selenium.wings1.CheckBoxes",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "Dropdown2",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Dropdown2",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "DropDown_1",
+            "request": "launch",
+            "mainClass": "selenium.wings1.DropDown_1",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Alert",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Alert",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "selenium.wings1.App",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "Autosuggestive_DropDown",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Autosuggestive_DropDown",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "EnableDisable",
+            "request": "launch",
+            "mainClass": "selenium.wings1.EnableDisable",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "ExplicitWait",
+            "request": "launch",
+            "mainClass": "selenium.wings1.ExplicitWait",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "Form",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Form",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "ImplicitWait",
+            "request": "launch",
+            "mainClass": "selenium.wings1.ImplicitWait",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "LocatorsInSelenium_1",
+            "request": "launch",
+            "mainClass": "selenium.wings1.LocatorsInSelenium_1",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "LocatorsInSelenium_2",
+            "request": "launch",
+            "mainClass": "selenium.wings1.LocatorsInSelenium_2",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "LocatorsInSelenium_3",
+            "request": "launch",
+            "mainClass": "selenium.wings1.LocatorsInSelenium_3",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "Selenium1",
+            "request": "launch",
+            "mainClass": "selenium.wings1.Selenium1",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "WindowsActivitiesInSelenium",
+            "request": "launch",
+            "mainClass": "selenium.wings1.WindowsActivitiesInSelenium",
+            "projectName": "selenium"
+        }
+    ]
+}
