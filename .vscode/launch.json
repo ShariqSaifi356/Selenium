@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Forms",
+            "request": "launch",
+            "mainClass": "selenium.wings1.TestAutomationCentral.Forms",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
+            "name": "Checkboxes",
+            "request": "launch",
+            "mainClass": "selenium.wings1.TestAutomationCentral.Checkboxes",
+            "projectName": "selenium"
+        },
+        {
+            "type": "java",
             "name": "Calendar_2",
             "request": "launch",
             "mainClass": "selenium.wings1.Exercise.Calendar_2",
