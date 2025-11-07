@@ -1,6 +1,7 @@
 package selenium.wings1.TestAutomationCentral;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,6 +24,9 @@ public class Forms {
         System.out.println("*********************");
         simpleDropDown(driver);
         System.out.println("*********************");
+        multiSelectDropDown(driver);
+        System.out.println("*********************");
+        groupedDropDown(driver);
         Thread.sleep(1000 * 7);
         driver.quit();
     }
@@ -71,4 +75,37 @@ public class Forms {
                     + actualSelectedText + "'.");
         }
     }
+
+    public static void multiSelectDropDown(WebDriver driver) {
+        driver.findElement(By.xpath("//button[normalize-space()='Multi-Select']")).click();
+        WebElement element = driver.findElement(By.xpath("//select[@class='form-multiselect block w-full mt-1']"));
+        Select multiSelectDropDown = new Select(element);
+        if (multiSelectDropDown.isMultiple()) {
+            multiSelectDropDown.selectByValue("option1");
+            multiSelectDropDown.selectByValue("option2");
+            multiSelectDropDown.selectByValue("option3");
+        }
+        // multiSelectDropDown.deselectAll();
+
+        List<WebElement> selectedOptions = multiSelectDropDown.getAllSelectedOptions();
+        String expectedSelectedText = "Option 2";
+        for (int i = 0; i < selectedOptions.size(); i++) {
+            WebElement currentOption = selectedOptions.get(i);
+            String actualSelectedText = currentOption.getText();
+            if (actualSelectedText.equals(expectedSelectedText)) {
+                multiSelectDropDown.deselectByValue("option2");
+                break;
+            }
+        }
+    }
+
+    public static void groupedDropDown(WebDriver driver){
+        driver.findElement(By.xpath("//button[normalize-space()='Grouped Dropdown']")).click();
+        WebElement element = driver.findElement(By.xpath("//div[@id='grouped-dropdown']//select[@class='form-select block w-full mt-1']"));
+        Select dropdown = new Select(element);
+        dropdown.selectByValue("option3");
+
+
+    }
+
 }
