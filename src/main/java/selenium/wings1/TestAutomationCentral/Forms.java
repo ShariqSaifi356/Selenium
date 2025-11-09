@@ -27,6 +27,11 @@ public class Forms {
         multiSelectDropDown(driver);
         System.out.println("*********************");
         groupedDropDown(driver);
+        textArea(driver);
+        System.out.println("*********************");
+        readOnlyText(driver);
+        System.out.println("*********************");
+        disableTest(driver);
         Thread.sleep(1000 * 7);
         driver.quit();
     }
@@ -99,13 +104,44 @@ public class Forms {
         }
     }
 
-    public static void groupedDropDown(WebDriver driver){
+    public static void groupedDropDown(WebDriver driver) {
         driver.findElement(By.xpath("//button[normalize-space()='Grouped Dropdown']")).click();
-        WebElement element = driver.findElement(By.xpath("//div[@id='grouped-dropdown']//select[@class='form-select block w-full mt-1']"));
+        WebElement element = driver
+                .findElement(By.xpath("//div[@id='grouped-dropdown']//select[@class='form-select block w-full mt-1']"));
         Select dropdown = new Select(element);
         dropdown.selectByValue("option3");
-
-
     }
 
+    public static void textArea(WebDriver driver) {
+        driver.findElement(By.xpath("//a[normalize-space()='Textboxes']")).click();
+        String placeHoldeString = driver.findElement(By.xpath("//input[@placeholder='Enter text']"))
+                .getDomAttribute("placeholder");
+        System.out.println("Place Holder Text is : " + placeHoldeString);
+        driver.findElement(By.xpath("//input[@placeholder='Enter text']")).sendKeys("Akash Kumar Yadav");
+        driver.findElement(By.xpath("//input[@placeholder='Enter text']")).clear();
+        driver.findElement(By.xpath("//input[@placeholder='Enter text']")).sendKeys("Akash Kumar");
+    }
+
+    public static void readOnlyText(WebDriver driver) {
+        driver.findElement(By.xpath("//button[normalize-space()='Read-Only Textbox']")).click();
+        WebElement readOnlyElement = driver.findElement(By.xpath("(//input[@value='Read-only text'])[1]"));
+        String str = readOnlyElement.getDomAttribute("value");
+        if ("Read-only text".equals(str)) {
+            System.out.println("Test Passed: The text is correct!");
+        } else {
+            System.out.println("Test Failed: Text did not match!");
+        }
+    }
+
+    public static void disableTest(WebDriver driver) {
+        driver.findElement(By.xpath("//button[normalize-space()='Disabled Textbox']")).click();
+        WebElement disaWebElement = driver.findElement(By.xpath("//input[@value='Disabled text']"));
+
+        boolean isFieldEnable = disaWebElement.isEnabled();
+        if (isFieldEnable) {
+            System.out.println("Test Failed: The field is enabled.");
+        } else {
+            System.out.println("Test Passed: The field is correctly disabled.");
+        }
+    }
 }
